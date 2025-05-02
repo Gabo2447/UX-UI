@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Desing UI/UX Test and SEO Test">
+  <meta name="description" content="Portfolio Web hecho sin ningun framework">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desing UI/UX</title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
   <!--TEXT IMPORT-->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
 <body>
   <!--HEADER-->
   <header class="header">
@@ -21,13 +24,64 @@
         <li class="nav__list-li"><a href="#" class="nav__list-a">Updates</a></li>
       </ul>
     </nav>
-    <button class="btn-contact">Contact Me</button>
+    <div class="content__btn-contact">
+      <button class="btn-contact">Contact Me</button>
+    </div>
   </header>
   <!--CONTENT-->
-  <main></main>
+  <main class="main">
+    <div class="main__content-title">
+      <h1 class="content__title">Hola! Soy Gabo2447, programador Web Full Stack</h1>
+      <div class="content__text">
+        <p class="text__section">Tengo mas de <span class="strong">un año</span> especializado en este sector!</p>
+        <div class="text__img">
+          <a target="_blank" href="https://github.com/Gabo2447"><img src="public/github_light.svg" alt="Github"
+              width="50px" height="50px" class="img__logo"></a>
+          <a target="_blank" href="https://linkedin.com/in/Gabo2447"><img src="public/linkedin.svg" alt="Linkedin"
+              width="50" height="50" class="img__logo"></a>
+          <a target="_blank" href="#"><img src="public/gmail.svg" width="50" height="50" alt="My gmail"
+              class="img__logo"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main__proyects">
+      <h2 class="proyects__title">🌐 Proyects</h2>
+      <div class="proyects">
+
+        <section class="proyects__section">
+          <img width="280px" class="section__img" src="public/todoApp.webp" alt="todoApp Logo">
+          <div class="proyects__div">
+            <h3 class="section__h3">Todo App</h3>
+            <p class="section__p">Aplicación sencilla y práctica para gestionar tus tareas diarias</p>
+          </div>
+          <a href="https://github.com/todoApp"><button class="proyects__btn">GitHub</button></a>
+        </section>
+
+        <section class="proyects__section">
+          <img width="280px" class="section__img" src="public/orangeCat.webp" alt="todoApp Logo">
+          <div class="proyects__div">
+            <h3 class="section__h3">Orange Cat</h3>
+            <p class="section__p">Bot de discord sencillo y completo, 100% hecho con JavaScript</p>
+          </div>
+          <a href="https://github.com/orangecat"><button class="proyects__btn">GitHub</button></a>
+        </section>
+
+        <section class="proyects__section">
+          <img width="280px" height="153px" class="section__img" src="public/backend.webp" alt="todoApp Logo">
+          <div class="proyects__div">
+            <h3 class="section__h3">Rest API</h3>
+            <p class="section__p">Una API con la finalidad de recibir y mandar una DataBase</p>
+          </div>
+          <a href="https://github.com/backend-portfolio"><button class="proyects__btn">GitHub</button></a>
+        </section>
+      </div>
+    </div>
+  </main>
   <!--FOOTER-->
   <footer></footer>
   <!--SCRIPT-->
   <script type="module" src="app.js"></script>
 </body>
+
 </html>

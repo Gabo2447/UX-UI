@@ -8,7 +8,7 @@
   background-color: var(--bg-color);
   color: var(--subtitle-color);
 
-  font-family: 'Montserrat', 'Times New Roman', Times, serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 600;
 }
@@ -19,46 +19,198 @@ h1 {
 
 button {
   background-color: var(--bg-color-card);
-  color: var(--btn-color);
+  color: var(--subtitle-color);
+  font-size: 18px;
   font-weight: 600;
-  border: 0 solid;
+  border: 1px solid transparent;
   border-radius: 20px;
   padding: 10px 20px;
+  transition: all 0.25s;
 }
 
-body {
+button:hover {
+  border: 1px solid var(--title-color);
+}
+
+img {
+  box-shadow: 0 0 20px 3px var(--bg-color-card);
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
   display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: 0 auto;
   justify-content: center;
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   flex: 1;
   padding: 0 10%;
+  background-color: var(--bg-color);
   border-bottom: 1px solid var(--bg-color-card);
 }
 
+/*
+ * .__                       .___            
+ * |  |__   ____ _____     __| _/___________ 
+ * |  |  \_/ __ \\__  \   / __ |/ __ \_  __ \
+ * |   Y  \  ___/ / __ \_/ /_/ \  ___/|  | \/
+ * |___|  /\___  >____  /\____ |\___  >__|   
+ *      \/     \/     \/      \/    \/       
+*/
+
 .header__img {
+  margin-top: 5px;
   border-radius: 50%;
 }
 
 .nav__list {
-  display: flex;
-  justify-content: space-between;
   list-style: none;
-}
-
-.nav__list-li {
-  margin: 0 15px;
+  display: flex;
+  gap: 40px;
+  flex: 1;
+  place-content: center;
 }
 
 .nav__list-a {
   text-decoration: none;
-  color: var(--btn-color);
+  padding: 2px;
+  color: var(--subtitle-color);
+  transition: all 0.3s;
+}
+
+.nav__list-a:hover {
+  color: #00251fbb;
+}
+
+.content__btn-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-contact {
   min-width: 20px;
   max-height: 70%;
+}
+
+/*
+ * 
+ *                .__        
+ *   _____ _____  |__| ____  
+ *  /     \\__  \ |  |/    \ 
+ * |  Y Y  \/ __ \|  |   |  \
+ * |__|_|  (____  /__|___|  /
+ *       \/     \/        \/ 
+ * 
+*/
+
+.main__content-title {
+  margin: 6rem;
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+}
+
+.content__title {
+  width: 60%;
+  font-size: 48px;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.text__section {
+  font-size: 25px;
+}
+
+.strong {
+  font-weight: bolder;
+}
+
+.text__img {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.img__logo {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.img__logo:hover {
+  transform: scale(1.1);
+}
+
+.proyects__title {
+  font-size: 34px;
+  color: var(--title-color);
+}
+
+.proyects__section {
+  max-width: 300px;
+  max-height: 500px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.section__img {
+  border-radius: 10px;
+  margin: 10px;
+  border-bottom: 1px solid var(--subtitle-color);
+  box-shadow: none;
+  width: 90%;
+  height: 153px;
+}
+
+.proyects__div {
+  margin: 15px;
+  margin-bottom: 20px;
+}
+
+.main__proyects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.proyects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+  height: 20%;
+}
+
+.section__p {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.proyects__btn {
+  display: flex;
+  background-color: #0095b6;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.proyects__btn:hover {
+  cursor: pointer;
 }
