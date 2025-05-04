@@ -8,32 +8,40 @@
   <title>Desing UI/UX</title>
 
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="public/logo.svg" type="image/svg+xml">
   <!--TEXT IMPORT-->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;500;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!--HEADER-->
   <header class="header">
     <img class="header__img" src="public/logo.svg" alt="Logo" width="48" height="48">
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
     <nav class="header__nav">
       <ul class="nav__list">
-        <li class="nav__list-li"><a href="#" class="nav__list-a">Home</a></li>
-        <li class="nav__list-li"><a href="#" class="nav__list-a">Notices</a></li>
-        <li class="nav__list-li"><a href="#" class="nav__list-a">Updates</a></li>
+        <li><a href="#home" class="nav__list-a">Home</a></li>
+        <li><a href="#proyects" class="nav__list-a">Proyects</a></li>
+        <li><a href="#experience" class="nav__list-a">Experience</a></li>
       </ul>
+      <div class="content__btn-contact">
+        <button class="btn-contact">Contact Me</button>
+      </div>
     </nav>
-    <div class="content__btn-contact">
-      <button class="btn-contact">Contact Me</button>
-    </div>
   </header>
   <!--CONTENT-->
   <main class="main">
-    <div class="main__content-title">
+    <div class="main__content-title" id="home">
       <h1 class="content__title">Hola! Soy Gabo2447, programador Web Full Stack</h1>
       <div class="content__text">
-        <p class="text__section">Tengo mas de <span class="strong">un año</span> especializado en este sector!</p>
+        <p class="text__section">Tengo mas de <span class="strong">un año</span> especializado en este sector, vivo
+          actualmente en Venezuela </p>
         <div class="text__img">
           <a target="_blank" href="https://github.com/Gabo2447"><img src="public/github_light.svg" alt="Github"
               width="50px" height="50px" class="img__logo"></a>
@@ -45,38 +53,80 @@
       </div>
     </div>
 
-    <div class="main__proyects">
-      <h2 class="proyects__title">🌐 Proyects</h2>
+    <div class="main__proyects" id="proyects">
+      <h2 class="subtitle">🌐 Proyectos</h2>
       <div class="proyects">
 
         <section class="proyects__section">
-          <img width="280px" class="section__img" src="public/todoApp.webp" alt="todoApp Logo">
+          <img class="section__img" src="public/todoApp.webp" alt="todoApp Logo">
           <div class="proyects__div">
             <h3 class="section__h3">Todo App</h3>
+            <span class="logos">
+              <img class="logos__img" src="public/css.svg" alt="CSS" width="24px">
+              <p>CSS3</p>
+              <img class="logos__img" src="public/React_light.svg" alt="React" width="24px">
+              <p>React</p>
+            </span>
             <p class="section__p">Aplicación sencilla y práctica para gestionar tus tareas diarias</p>
+            <a href="https://github.com/Gabo2447/todoApp" target="_blank"><button
+                class="proyects__btn">GitHub</button></a>
           </div>
-          <a href="https://github.com/todoApp"><button class="proyects__btn">GitHub</button></a>
         </section>
 
         <section class="proyects__section">
           <img width="280px" class="section__img" src="public/orangeCat.webp" alt="todoApp Logo">
           <div class="proyects__div">
             <h3 class="section__h3">Orange Cat</h3>
+            <span class="logos">
+              <img class="logos__img" src="public/djs.svg" alt="CSS" width="24px">
+              <p>Discord.JS</p>
+              <img src="public/javascript.svg" alt="JavaScript" class="logos__img" width="24px">
+              <p>JavaScript</p>
+            </span>
             <p class="section__p">Bot de discord sencillo y completo, 100% hecho con JavaScript</p>
+            <a href="https://github.com/Gabo2447/orangecat" target="_blank"><button
+                class="proyects__btn">GitHub</button></a>
           </div>
-          <a href="https://github.com/orangecat"><button class="proyects__btn">GitHub</button></a>
         </section>
 
         <section class="proyects__section">
           <img width="280px" height="153px" class="section__img" src="public/backend.webp" alt="todoApp Logo">
           <div class="proyects__div">
             <h3 class="section__h3">Rest API</h3>
+            <span class="logos">
+              <img class="logos__img" src="public/expressjs.svg" alt="CSS" width="24px">
+              <p>Express</p>
+              <img class="logos__img" src="public/nodejs.svg" alt="React" width="24px">
+              <p>Node</p>
+            </span>
             <p class="section__p">Una API con la finalidad de recibir y mandar una DataBase</p>
+            <a href="https://github.com/Gabo2447/backend-portfolio" target="_blank"><button
+                class="proyects__btn">GitHub</button></a>
           </div>
-          <a href="https://github.com/backend-portfolio"><button class="proyects__btn">GitHub</button></a>
         </section>
       </div>
     </div>
+
+    <h2 class="subtitle">🗺️ Experiencia</h2>
+    <h2 class="subtitle">🗣️ Sobre Mí</h2>
+    <section class="about" id="about">
+      <div class="about__container">
+        <img src="public/logo.svg" alt="Avatar de Gabo2447" width="80px" height="80px" class="about__avatar">
+        <div class="about__info">
+          <h2 class="about__title">Gabo2447</h2>
+          <p class="about__text">
+            ¡Hola! Soy <strong>Gabo2447</strong>, desarrollador web Full Stack de Venezuela. Llevo más de un año creando
+            soluciones digitales eficientes y atractivas, tanto en proyectos personales como colaborativos.<br><br>
+            Me especializo en <strong>JavaScript, React, Node.js</strong> y <strong>CSS3</strong>. Disfruto aprender
+            nuevas tecnologías y enfrentar desafíos que me permitan crecer profesionalmente.<br><br>
+            Actualmente, busco mi primera oportunidad laboral en el sector IT y estoy abierto a colaborar en proyectos
+            innovadores. Si tienes una idea o simplemente quieres conectar, ¡no dudes en escribirme!
+          </p>
+        </div>
+        <img src="public/" alt="">
+      </div>
+    </section>
+
   </main>
   <!--FOOTER-->
   <footer></footer>

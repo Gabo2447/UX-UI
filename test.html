@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;500;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="experience__wrapper">
+    <div class="experience__header">
+      <img src="public/logo.svg" alt="Logo personal" class="experience__logo">
+      <h2 class="experience__title">Experiencia</h2>
+    </div>
+    <div class="experience__content">
+      <p>
+        Soy <strong>Gabo2447</strong>, desarrollador web Full Stack con más de un año de experiencia. He trabajado en
+        proyectos personales y colaborativos usando <strong>JavaScript, React, Node.js</strong> y <strong>CSS3</strong>.
+        Me apasiona crear soluciones eficientes y aprender siempre algo nuevo.
+      </p>
+      <ul class="experience__list">
+        <li>🚀 Desarrollo de aplicaciones SPA con React.</li>
+        <li>🔗 APIs RESTful con Node.js y Express.</li>
+        <li>🗄️ Manejo de bases de datos SQL y NoSQL.</li>
+        <li>🤝 Trabajo en equipo con Git y metodologías ágiles.</li>
+        <li>📱 Diseño responsivo y accesible.</li>
+      </ul>
+      <p>
+        Mi objetivo es seguir creciendo profesionalmente y aportar valor en cada proyecto.
+      </p>
+    </div>
+  </div>
+
+  <section class="about" id="about">
+    <div class="about__container">
+      <img src="public/logo.svg" alt="Avatar de Gabo2447" class="about__avatar">
+      <div class="about__info">
+        <h2 class="about__title">Sobre mí</h2>
+        <p class="about__text">
+          ¡Hola! Soy <strong>Gabo2447</strong>, desarrollador web Full Stack de Venezuela. Llevo más de un año creando
+          soluciones digitales eficientes y atractivas, tanto en proyectos personales como colaborativos.<br><br>
+          Me especializo en <strong>JavaScript, React, Node.js</strong> y <strong>CSS3</strong>. Disfruto aprender
+          nuevas tecnologías y enfrentar desafíos que me permitan crecer profesionalmente.<br><br>
+          Actualmente, busco mi primera oportunidad laboral en el sector IT y estoy abierto a colaborar en proyectos
+          innovadores. Si tienes una idea o simplemente quieres conectar, ¡no dudes en escribirme!
+        </p>
+        <div class="about__links">
+          <a href="https://github.com/Gabo2447" target="_blank" title="GitHub">
+            <img src="public/github_light.svg" alt="GitHub" width="36" height="36">
+          </a>
+          <a href="https://linkedin.com/in/Gabo2447" target="_blank" title="LinkedIn">
+            <img src="public/linkedin.svg" alt="LinkedIn" width="36" height="36">
+          </a>
+          <a href="#" title="Gmail">
+            <img src="public/gmail.svg" alt="Gmail" width="36" height="36">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    :root {
+      font-family: 'Montserrat';
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-weight: 600;
+    }
+
+    .strong {
+      font-weight: bolder;
+    }
+
+    .about {
+      background: #e6f7f2;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(26, 108, 91, 0.07);
+      max-width: 800px;
+      margin: 2.5rem auto 2rem auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .about__container {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .about__avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #fff;
+      object-fit: contain;
+      box-shadow: 0 1px 8px rgba(26, 108, 91, 0.08);
+    }
+
+    .about__info {
+      flex: 1;
+    }
+
+    .about__title {
+      font-size: 2rem;
+      color: #1a6c5b;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .about__text {
+      color: #2c3e50;
+      font-size: 1.08rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .about__links a {
+      display: inline-block;
+      margin-right: 0.7rem;
+      transition: transform 0.2s;
+    }
+
+    .about__links a:hover {
+      transform: scale(1.15);
+    }
+
+    @media (max-width: 700px) {
+      .about__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        text-align: center;
+      }
+
+      .about__avatar {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .experience__wrapper {
+      background: #e6f7f2;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(26, 108, 91, 0.07);
+      padding: 2rem 1.5rem;
+      max-width: 800px;
+      margin: 2.5rem auto 0 auto;
+    }
+
+    .experience__header {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .experience__logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #fff;
+      object-fit: contain;
+      box-shadow: 0 1px 8px rgba(26, 108, 91, 0.08);
+    }
+
+    .experience__title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1a6c5b;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .experience__content p {
+      color: #2c3e50;
+      font-size: 1.08rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .experience__list {
+      list-style: none;
+      padding-left: 0;
+      margin: 1rem 0 1.2rem 0;
+    }
+
+    .experience__list li {
+      margin-bottom: 0.6rem;
+      font-size: 1.06rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .experience__wrapper {
+        padding: 1.2rem 0.5rem;
+      }
+
+      .experience__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .experience__title {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</body>
+
+</html>
