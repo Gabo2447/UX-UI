@@ -54,9 +54,9 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background: radial-gradient(circle at center, rgba(15, 44, 75, 0.1) 0%, rgba(17, 31, 53, 0.1) 100%);
+  background: #E0F7FA1a;
   backdrop-filter: blur(8px);
-  box-shadow: 0px 0px 24px 0px #e1e1e1;
+  border-bottom: solid 1px #004d40;
   z-index: 100;
   box-sizing: border-box;
 }
